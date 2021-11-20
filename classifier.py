@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
+st.set_page_config(page_title='Job Classifier',layout='wide',initial_sidebar_state='auto')
 st.subheader("Please answer this questionnaire honestly")
 
 sex = st.number_input("1.Are you Male or female? 1=Male 2=Female",min_value=1, max_value=2, format=None, key=None)
