@@ -29,7 +29,7 @@ submit = st.button('Submit my answers')
 
 if submit:
     user_input = np.array([sex, prov, geoType, edu_status, edu_field,edu_lvl, lf_work, neet])
-    pickle_in = open('./Model/KNN-Emp.pickle' , 'rb')
+    pickle_in = open('./KNN-Emp.pickle' , 'rb')
     clf = pickle.load(pickle_in)
     prediction = clf.predict([user_input])
     Categories = ['Not Sure','Employed','Unemployed','Discouraged job seeker','not economically active']
